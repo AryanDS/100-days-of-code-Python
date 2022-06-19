@@ -1,0 +1,15 @@
+from prettytable import PrettyTable
+
+#Creating an object "table" from the PrettyTable class
+table = PrettyTable()
+print(table)
+
+#adding data to the table
+
+table.add_column("Pokenmon_Name",["Pikachu","Mewtwo"])
+table.add_column("type",["Electric","Physic"])
+
+print(table)
+
+table.align = "l"
+print(table)
