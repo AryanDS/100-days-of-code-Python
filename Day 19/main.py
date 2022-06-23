@@ -19,7 +19,7 @@ Using Turtle module we would be exploring the high order functions and event lis
 
 # screen.exitonclick()
 
-#checking 
+
 """"
 Etch a Sketch program
 """
