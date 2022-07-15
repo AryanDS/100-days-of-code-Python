@@ -15,9 +15,9 @@ user_params={
 }
 
 
-# response = req.post(url= pixela_endpoint, json=user_params)
-# #Below will return the text from the response.
-# print(response.text)
+response = req.post(url= pixela_endpoint, json=user_params)
+#Below will return the text from the response.
+print(response.text)
 
 """
 After creating the username we comment out the above code since username is created and we can access their API service
