@@ -79,5 +79,3 @@ for i in range(len(duration)):
     response = req.post(url=SHEETY_URL, json=POST_data)
     print(response.text)
 
-
-
