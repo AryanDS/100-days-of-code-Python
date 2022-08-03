@@ -4,30 +4,30 @@
 Using the SMTPLIB module to send emails
 """
 
-# #My email credentials 
-# email = "hiddenhills@gmail.com "
-# password ="ola"
-# #Creating an smtplib object which would connect to the email provider
-# connection = smtplib.SMTP("smtp.gmail.com")
+#My email credentials 
+email = "hiddenhills@gmail.com "
+password ="ola"
+#Creating an smtplib object which would connect to the email provider
+connection = smtplib.SMTP("smtp.gmail.com")
 
-# #starttls calls the transport layer security protocol which would encrpyt the email sent, secure it basically 
-# connection.starttls()
+#starttls calls the transport layer security protocol which would encrpyt the email sent, secure it basically 
+connection.starttls()
 
-# connection.login(user=email, password=password)
-# connection.sendmail(from_addr=email , to_addrs="helloworld@gmail.com", msg="Subject:Hello\n\n This is the body of my email")
+connection.login(user=email, password=password)
+connection.sendmail(from_addr=email , to_addrs="helloworld@gmail.com", msg="Subject:Hello\n\n This is the body of my email")
 
-# connection.close()
+connection.close()
 
-# #Above using the "with" keyword
+#Above using the "with" keyword
 
-# with smtplib.SMTP("smtp.gmail.com") as connection:
-#     connection.starttls()
-#     connection.login(user=email, password=password)
-#     connection.sendmail(
-#         from_addr=email , 
-#         to_addrs="helloworld@gmail.com", 
-#         msg="Subject:Hello\n\n This is the body of my email"
-#         )
+with smtplib.SMTP("smtp.gmail.com") as connection:
+    connection.starttls()
+    connection.login(user=email, password=password)
+    connection.sendmail(
+        from_addr=email , 
+        to_addrs="helloworld@gmail.com", 
+        msg="Subject:Hello\n\n This is the body of my email"
+        )
 
 
 """

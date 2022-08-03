@@ -1,0 +1,27 @@
+h1{
+  color: red;
+  font-size: 150px
+}
+img:hover{
+  background-color: gold;
+}
+/*
+img{
+  background-color: red;
+}
+*/
+
+/* ####### CLASS SELECTORS ########### */
+
+.bacon{
+  background-color: red;
+}
+
+.broccoli{
+  background-color: green;
+}
+
+/* ####### ID SELECTORS ########### */
+#heading{
+  color: blue;
+}
